@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="output.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <title>Splash</title>
+    </head>
+<body>
+    <section class="w-full h-fit flex flex-col gap-[40px] items-center justify-center">
+        <header class="w-full pb-[10px] h-fit pt-[70px] flex flex-col items-center justify-start">        
+            <nav class="w-full absolute top-0 flex text-black px-[40px] items-center justify-between pt-[20px]">
+                <div class="flex gap-[10%]">
+                    <img src="Splash2.png" alt="">
+                    <ul id="list" class="capitalize smm:w-[65%] smm:py-[13px] smm:mt-[40%] smm:hidden flex gap-[10px] m-auto smm:text-white">
+                        <a href="index.html" class="">
+                            <li>home</li>
+                        </a>
+                        <a href="" class="after:w-[44px] after:h-[2px] after:rounded-full after:bg-black after:absolute aft">
+                            <li>shop</li>
+                        </a>
+                        <a href="blog.html" class="">
+                            <li>blog</li>
+                        </a>
+                        <a href="about.html" class="">
+                            <li>about</li>
+                        </a>
+                        <a href="contact.html" class="">
+                            <li>contact</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="flex gap-[20px] smm:hidden">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    <span id="badge" class="w-[14px] text-white h-[14px] text-[10px] flex items-center justify-center rounded-full bg-red-600 absolute right-[37px] top-[17px]">
+                        2
+                    </span>
+                </div>
+                <span onclick="ham()" class="hidden w-fit h-fit smm:flex flex-col items-center justify-center gap-[4px]">
+                    <p class="w-[25px] h-[2px] bg-black rounded-full"></p>
+                    <p class="w-[25px] h-[2px] bg-black rounded-full"></p>
+                    <p class="w-[25px] h-[2px] bg-black rounded-full"></p>
+                </span>
+            </nav>
+            <div class="flex flex-row items-center smm:pt-[30px] justify-center gap-[3px]">
+                <p class="font-bold">Information </p>
+                <span class="material-symbols-outlined font-semibold">
+                    chevron_right
+                    </span>
+                <p>Shipping</p>
+                <span class="material-symbols-outlined font-semibold">
+                    chevron_right
+                    </span>
+                <p>Payment</p>
+            </div>
+            <div class="flex w-[48%] smm:w-full flex-col items-center justify-center gap-[15px] pt-[30px]">
+                <p>Express Checkout</p>
+                <span class="flex gap-[10px]">
+                    <img class="w-[120px] h-[40px] object-contain" src="Frame 185.png" alt="">
+                    <img class="w-[120px] h-[40px] object-contain" src="image 31.png" alt="">
+                </span>
+                <div class="w-[80%] flex items-center justify-center gap-[5px]">
+                    <hr class="w-[46%] h-[1px] bg-black border-none">
+                    OR
+                    <hr class="w-[46%] h-[1px] bg-black border-none">
+                </div>
+                <div class="w-[80%]">
+                    <span class="flex pb-[4px] items-center justify-between w-full">
+                        <p class="text-[14px] smm:text-[12px] font-semibold">Contact Information</p>
+                        <p class="text-[12px] smm:text-[10px]">Already have an account? Log In</p>
+                    </span>
+                    <input type="text" placeholder="Email" class="w-full py-[8px] placeholder:text-sm border-[1px] pl-[13px] border-black placeholder:text-black">
+                </div>
+                <div class="w-[80%] flex flex-wrap gap-[15px]">
+                        <p class=" w-full text-[14px] font-semibold">Shipping address</p>
+                    <select name="" id="" class="w-full py-[8px] pr-[10px] text-sm border-[1px] pl-[13px] border-black placeholder:text-black">
+                        <option value="">Country</option>
+                    </select>
+                    <input class="w-[48%] py-[10px] placeholder:text-sm border-[1px] pl-[13px] border-black placeholder:text-black smm:w-full" type="text" placeholder="First Name(optional)">
+                    <input class="w-[48%] py-[10px] placeholder:text-sm border-[1px] pl-[13px] border-black placeholder:text-black smm:w-full" type="text" placeholder="Last Name">
+                    <input type="text" placeholder="Company(optional)" class="w-full py-[8px] placeholder:text-sm border-[1px] pl-[13px] border-black placeholder:text-black">
+                    <input type="text" placeholder="Address" class="w-full py-[8px] placeholder:text-sm border-[1px] pl-[13px] border-black placeholder:text-black">
+                    <input type="text" placeholder="Apartment,suite etc. (optional)" class="w-full py-[8px] placeholder:text-sm border-[1px] pl-[13px] border-black placeholder:text-black">
+                    <input type="text" placeholder="City" class="w-full py-[8px] placeholder:text-sm border-[1px] pl-[13px] border-black placeholder:text-black">
+                    <input type="text" placeholder="Phone" class="w-full py-[8px] placeholder:text-sm border-[1px] pl-[13px] border-black placeholder:text-black">
+                    <span class="flex gap-[10px] items-center justify-center">
+                        <input type="checkbox" name="" class="as p-[4px]" id="">
+                        <p>Save this information for next time</p>
+                    </span>
+                    <a href="shipping.html"><button class="px-[25px] py-[12px] bg-black text-white text-sm smm:ml-[0] smm:m-auto ml-[59%]">Continue To Shipping</button></a>
+                </div>
+            </div>
+        </header>
+        <footer class="flex flex-col py-[15px] w-full pt-[120px] gap-[70px] h-fit">
+            <div class="w-full flex smm:flex-col smm:px-[30px] smm:gap-[25px] justify-between items-top pt-[20px] px-[180px]">
+                <ul class="w-[17%] smm:w-[90%] flex-col flex gap-[10px]">
+                    <li class="font-medium pb-[10px] text-xl">About</li>
+                    <a href=""><li class="text-sm">About Us</li></a>
+                    <a href=""><li class="text-sm">Career</li></a>
+                    <a href=""><li class="text-sm">Contact Us</li></a>
+                    <a href=""><li class="text-sm">Track Your Orders</li></a>
+                    <a href=""><li class="text-sm">Customer Service </li></a>
+                    <a href=""><li class="text-sm">Returns & Exchanges</li></a>
+                </ul>
+                <ul class="w-[17%] smm:w-[90%] flex-col flex gap-[10px]">
+                    <li class="font-medium pb-[10px] text-xl">Privacy</li>
+                    <a href=""><li class="text-sm">Privacy Policy</li></a>
+                    <a href=""><li class="text-sm">Terms & Condition</li></a>
+                    <a href=""><li class="text-sm">Delivery Information</li></a>
+                    <a href=""><li class="text-sm">FAQ</li></a>
+                </ul>
+                <ul class="w-[23%] flex-col flex gap-[10px]">
+                    <li class="font-medium pb-[10px] text-xl">Shops</li>
+                    <a href=""><li class="text-sm">Dressmeoutlet.com, Nigeria </li></a>
+                    <a href=""><li class="text-sm">Lauras Elegance, Dubai</li></a>
+                    <a href=""><li class="text-sm">The Brand, UK</li></a>
+                </ul>
+            </div>
+            <div class="flex w-full border-b-[0.5px] border-t-[0.5px] py-[30px] border-black justify-between items-center px-[40px]">
+                <span class="flex items-center justify-center gap-[20px]">
+                    <span class="text-2xl font-bold font-serif">SPLASH</span>
+                    <p class="text-sm">@Splashthebrand.com</p>
+                </span>
+                <span>
+                    <img src="Frame 113.png" alt="">
+                </span>
+            </div>
+        </footer>
+    </section>
+    <section id="loads" class="w-full h-[100vh] hidden items-center justify-center bg-white text-white fixed top-0">
+        <ul class="flex gap-[2px] items-center justify-center">
+        <li class="anim">Splash.</li>
+        <li class="anim absolute">Splash.</li>
+        </ul>
+    </section>
+    <script src="index.js"></script>
+    <script>
+        window.onload = load()
+let iii = 0
+let loadss = document.getElementById('loads')
+function load(){
+let n =  setInterval(() => {
+    iii++
+         if (iii == 6) {
+         loadss.style.display = 'none' 
+         console.log(iii)
+         clearInterval(n)
+    } else {
+        loadss.style.display = 'flex'   
+        console.log(iii)
+    }
+   
+}, 1000);
+
+}
+</script>
+</body>
+</html>

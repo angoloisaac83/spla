@@ -1,0 +1,51 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+    css
+.wave-text {
+  position: relative;
+  display: inline-block;
+}
+ .text {
+  font-size: 48px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+ .text:before,
+.text:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  z-index: -1;
+  opacity: 0.5;
+  clip-path: polygon(0 15%, 100% 25%, 100% 85%, 0 75%);
+  animation: wave 2s linear infinite;
+}
+ .text:after {
+  animation-delay: -1s;
+}
+ @keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+</style>
+<body>
+  <div class="wave-text">
+    <span class="text">Water Wave Effect</span>
+  </div>
+</body>
+</html>

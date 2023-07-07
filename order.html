@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="output.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <title>Splash</title>
+    </head>
+<body>
+    <section>
+        <nav class="w-full absolute top-0 flex text-black px-[40px] items-center justify-between pt-[20px]">
+            <div class="flex gap-[10%]">
+                <img src="Splash2.png" alt="">
+                <ul id="list" class="capitalize smm:w-[65%] smm:py-[13px] smm:mt-[40%] smm:hidden flex gap-[10px] m-auto smm:text-white">
+                    <a href="index.html" class="">
+                        <li>home</li>
+                    </a>
+                    <a href="" class="after:w-[44px] after:h-[2px] after:rounded-full after:bg-black after:absolute aft">
+                        <li>shop</li>
+                    </a>
+                    <a href="blog.html" class="">
+                        <li>blog</li>
+                    </a>
+                    <a href="about.html" class="">
+                        <li>about</li>
+                    </a>
+                    <a href="contact.html" class="">
+                        <li>contact</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="flex gap-[20px] smm:hidden">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+                <span id="badge" class="w-[14px] text-white h-[14px] text-[10px] flex items-center justify-center rounded-full bg-red-600 absolute right-[37px] top-[17px]">
+                    2
+                </span>
+            </div>
+            <span onclick="ham()" class="hidden w-fit h-fit smm:flex flex-col items-center justify-center gap-[4px]">
+                <p class="w-[25px] h-[2px] bg-black rounded-full"></p>
+                <p class="w-[25px] h-[2px] bg-black rounded-full"></p>
+                <p class="w-[25px] h-[2px] bg-black rounded-full"></p>
+            </span>
+        </nav>
+        <header class="w-[45%] border-[4px] border-black smm:text-center pb-[30px] smm:mt-[40%] smm:w-[90%] mt-[10%] gap-[30px] m-auto h-fit pt-[70px] flex flex-col items-center smm:justify-center justify-start">
+            <p  class="text-4xl">Your order was successful</p>
+            <img src="game-icons_check-mark.png" alt="">
+            <p class="text-lg">A confirmation email will be sent shortly</p>
+            <button class="w-fit h-fit bg-black text-white text-[13px] border-black border-[1px] px-[33px] py-[8px]">OK</button>
+        </header>
+        </section>
+        <section id="loads" class="w-full h-[100vh] hidden items-center justify-center bg-white text-white fixed top-0">
+            <ul class="flex gap-[2px] items-center justify-center">
+            <li class="anim">Splash.</li>
+            <li class="anim absolute">Splash.</li>
+            </ul>
+        </section>
+        <script src="SPLASH.JS"></script>
+        <script>
+            window.onload = load()
+let iii = 0
+let loadss = document.getElementById('loads')
+function load(){
+  let n =  setInterval(() => {
+        iii++
+             if (iii == 6) {
+             loadss.style.display = 'none' 
+             console.log(iii)
+             clearInterval(n)
+        } else {
+            loadss.style.display = 'flex'   
+            console.log(iii)
+        }
+       
+    }, 1000);
+  
+}
+</script>
+</body>
+</html>

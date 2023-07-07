@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+*{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.bgg{
+    background: url('s.png');
+    background-size: 100%;
+}
+.bgg2{
+    background: url('Rectangle 5.png');
+    background-size: cover;
+    background-position: bottom;
+    height: 65vh;
+}
+.bgg3{
+    background: url('image 35.png');
+    background-size: cover;
+    background-position: bottom;
+    height: 65vh;
+}
+.bgg4{
+    background: url('Rectangle 87.png');
+    background-size: 100%;
+    background-position: top;
+    height: 80vh;
+}
+.bgg10{
+    background: url('image 9.png');
+    background-size: 100%;
+    background-position: top;
+    height: 95vh;
+}
+.aft::after{
+    content: '';
+}
+.as{
+    accent-color: black;
+    
+}
+.bggr{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.listing{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50px;
+    z-index: 20;
+    padding-left: 10px;
+    background: black;
+    width: 100%;
+}
+.anim{
+    font-size: 6em;
+    font-weight: bolder;
+}
+.anim:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 0.5px black;
+}
+.anim:nth-child(2){
+    color: black;
+    animation: anime 4s ease-in-out infinite;
+}
+@keyframes anime {
+    0%,100%{
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }50%{
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
