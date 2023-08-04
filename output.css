@@ -1400,6 +1400,7 @@ video {
     padding: 70px 40px;
     color: black;
     background: white;
+    box-shadow: 4px 2px 3px 4px rgba(0,0,0,0.24);
     width: 80%;
     height: 100vh;
     transition: .4s;
