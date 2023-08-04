@@ -1394,14 +1394,16 @@ video {
   flex-direction: column;
   position: fixed;
   top: 0px;
-  left: 80%;
+  left: 0%;
   z-index: 20;
   padding-left: 10px;
   background: white;
   width: 80%;
   transition: .4s;
 }
-
+.o{
+left: -80%;
+}
 .anim{
   font-size: 6em;
   font-weight: bolder;
