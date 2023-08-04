@@ -1393,11 +1393,13 @@ video {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 50px;
+  top: 0px;
+  left: 80%;
   z-index: 20;
   padding-left: 10px;
-  background: black;
-  width: 100%;
+  background: white;
+  width: 80%;
+  transition: .4s;
 }
 
 .anim{
