@@ -1388,23 +1388,21 @@ video {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.listing{
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 0px;
-  left: 0%;
-  z-index: 20;
-  padding-left: 10px;
-  color: black;
-  background: white;
-  width: 80%;
-  height: 100vh;
-  transition: .4s;
-}
-.o{
-left: -80%;
+.listing {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    font-size: 22px;
+    top: 0px;
+    left: 0%;
+    gap: 43px;
+    z-index: 20;
+    padding: 70px 40px;
+    color: black;
+    background: white;
+    width: 80%;
+    height: 100vh;
+    transition: .4s;
 }
 .anim{
   font-size: 6em;
