@@ -236,5 +236,22 @@ let n =  setInterval(() => {
 
 }
 </script>
+      <script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.querySelector("nav").style.top = "0";
+    document.querySelector("nav").style.position = 'fixed'
+  } else {
+    document.querySelector("nav").style.top = "-68px";
+    document.querySelector("nav").style.position = 'sticky'
+  }
+}
+}
+  </script>
 </body>
 </html>
