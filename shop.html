@@ -246,8 +246,12 @@ function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.querySelector("nav").style.top = "0";
     document.querySelector("nav").style.position = 'fixed'
+       document.querySelector("nav").style.background = 'white'
+       document.querySelector("nav").style.padding = '20px 40px'
+       document.querySelector("nav").style.boxShadow = '3px 3px 3px 3px rgba(0,0,0,0.24)'
   } else {
     // document.querySelector("nav").style.top = "-68px";
+       document.querySelector("nav").style.boxShadow = '0px'
   }
 }
 }
